@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ECS, CIL, LR & ERL Dashboard</h1>
+        <p class="subtitle">Performance Tracker</p>
+
+        <div class="dashboard-grid">
+            <!-- ECS Dashboard -->
+            <div class="dashboard-card">
+                <h2>ECS</h2>
+                <div class="section">
+                    <h3>Disbursement</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="disbursement" data-section="ecs">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="disbursement" data-section="ecs">
+                    </div>
+                    <div class="percentage" id="ecs-disbursement-percent">0%</div>
+                </div>
+                <div class="section">
+                    <h3>Collection</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="collection" data-section="ecs">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="collection" data-section="ecs">
+                    </div>
+                    <div class="percentage" id="ecs-collection-percent">0%</div>
+                </div>
+            </div>
+
+            <!-- CIL Dashboard -->
+            <div class="dashboard-card">
+                <h2>CIL</h2>
+                <div class="section">
+                    <h3>Disbursement</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="disbursement" data-section="cil">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="disbursement" data-section="cil">
+                    </div>
+                    <div class="percentage" id="cil-disbursement-percent">0%</div>
+                </div>
+                <div class="section">
+                    <h3>Collection</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="collection" data-section="cil">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="collection" data-section="cil">
+                    </div>
+                    <div class="percentage" id="cil-collection-percent">0%</div>
+                </div>
+            </div>
+
+            <!-- LR Dashboard -->
+            <div class="dashboard-card">
+                <h2>LR</h2>
+                <div class="section">
+                    <h3>Disbursement</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="disbursement" data-section="lr">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="disbursement" data-section="lr">
+                    </div>
+                    <div class="percentage" id="lr-disbursement-percent">0%</div>
+                </div>
+                <div class="section">
+                    <h3>Collection</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="collection" data-section="lr">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="collection" data-section="lr">
+                    </div>
+                    <div class="percentage" id="lr-collection-percent">0%</div>
+                </div>
+            </div>
+
+            <!-- ERL Dashboard -->
+            <div class="dashboard-card">
+                <h2>ERL</h2>
+                <div class="section">
+                    <h3>Disbursement</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="disbursement" data-section="erl">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="disbursement" data-section="erl">
+                    </div>
+                    <div class="percentage" id="erl-disbursement-percent">0%</div>
+                </div>
+                <div class="section">
+                    <h3>Collection</h3>
+                    <div class="input-group">
+                        <label>Target</label>
+                        <input type="number" class="target" data-type="collection" data-section="erl">
+                    </div>
+                    <div class="input-group">
+                        <label>Achieved</label>
+                        <input type="number" class="achieved" data-type="collection" data-section="erl">
+                    </div>
+                    <div class="percentage" id="erl-collection-percent">0%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="quick-fill-btn" onclick="quickFill()">Quick Fill</button>
+            <button class="clear-btn" onclick="clearAll()">Clear All</button>
+            <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
